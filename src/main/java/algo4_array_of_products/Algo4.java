@@ -13,10 +13,10 @@ public class Algo4 {
 
         int[] resultArray= new int[array.length];
 
-        for(int i=0; i<array.length; i++){
+        for(int i = 0; i < array.length; i++){
             int products = 1;
-            for(int j=0; j<array.length; j++){
-                if(i!=j){
+            for(int j = 0; j < array.length; j++){
+                if(i != j){
                     products *= array[j];
                 }
             }

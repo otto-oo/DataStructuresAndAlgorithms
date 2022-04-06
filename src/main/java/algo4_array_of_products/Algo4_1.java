@@ -19,7 +19,7 @@ public class Algo4_1 {
         }
 
         int[] resultArray= new int[array.length];
-        for(int i=0; i<array.length; i++){
+        for(int i = 0; i < array.length; i++){
             resultArray[i] = totalProducts / array[i];
         }
         return resultArray;
