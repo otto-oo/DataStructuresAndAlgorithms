@@ -6,7 +6,7 @@ public class Algo4_1 {
 
     public static void main(String[] args) {
 
-        int[] array = {5, 1, 4, 2};
+        int[] array = {5, 0, 4, 2};
         System.out.println("Arrays.toString(arrayOfProducts(array)) = " + Arrays.toString(arrayOfProducts(array)));
 
     }

@@ -5,26 +5,24 @@ import java.util.Arrays;
 public class Algo4_2 {
 
     public static void main(String[] args) {
-        int[] array = {5, 1, 4, 2};
+        int[] array = {5, 3, 4, 2};
         System.out.println("Arrays.toString(arrayOfProducts(array)) = " + Arrays.toString(arrayOfProducts(array)));
     }
 
-    public static int[] arrayOfProducts(int[] nums) {
+    public static int[] arrayOfProducts(int[] array) {
+        int[] products = new int[array.length];
 
-        int[] ret = new int[nums.length];
-        if(nums.length == 0) return ret;
-
-        int runningprefix = 1;
-        for(int i = 0; i < nums.length; i++){
-            ret[i] = runningprefix;
-            runningprefix*= nums[i];
+        int leftRunningProduct = 1;
+        for (int i = 0; i < array.length; i++) {            // 1, 5, 15, 60
+            products[i] = leftRunningProduct;
+            leftRunningProduct *= array[i];
         }
 
-        int runningsufix = 1;
-        for(int i = nums.length - 1; i >= 0; i--){
-            ret[i] *= runningsufix;
-            runningsufix *= nums[i];
+        int rightRunningProduct = 1;                        // 24 ,40 ,30 ,60
+        for (int i = array.length - 1; i >= 0; i--) {
+            products[i] *= rightRunningProduct;
+            rightRunningProduct *= array[i];
         }
-        return ret;
+        return products;
     }
 }
