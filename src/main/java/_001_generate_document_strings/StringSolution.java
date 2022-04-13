@@ -1,6 +1,6 @@
-package main.java.algo1_generate_document_strings;
+package main.java._001_generate_document_strings;
 
-public class Nick {
+public class StringSolution {
 
     public static void main(String[] args) {
 
