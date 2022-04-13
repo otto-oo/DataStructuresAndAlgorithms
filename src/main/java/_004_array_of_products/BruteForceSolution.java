@@ -1,8 +1,8 @@
-package main.java.algo4_array_of_products;
+package main.java._004_array_of_products;
 
 import java.util.Arrays;
 
-public class Algo4 {
+public class BruteForceSolution {
     public static void main(String[] args) {
 
         int[] array = {5, 1, 4, 2};
