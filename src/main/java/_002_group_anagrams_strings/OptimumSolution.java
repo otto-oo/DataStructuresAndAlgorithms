@@ -1,8 +1,8 @@
-package main.java.algo2_group_anagrams_strings;
+package main.java._002_group_anagrams_strings;
 
 import java.util.*;
 
-public class Algo2 {
+public class OptimumSolution {
 
     public static void main(String[] args) {
 
