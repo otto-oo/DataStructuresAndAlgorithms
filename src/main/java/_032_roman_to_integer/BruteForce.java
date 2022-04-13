@@ -8,6 +8,7 @@ public class BruteForce {
 
     }
 
+    // time complexity O(n), space complexity O(n)
     public static int romanToInteger(String s){
         int sum = 0;
         boolean beforeI = false;                        // check letter if before
