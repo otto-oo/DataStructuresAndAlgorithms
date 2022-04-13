@@ -3,18 +3,18 @@ package main.java._032_roman_to_integer;
 public class BruteForce {
 
     public static void main(String[] args) {
-        int number = romanToInteger("MCD");
+        int number = romanToInteger("MDC");
         System.out.println("number = " + number);
 
     }
 
     public static int romanToInteger(String s){
         int sum = 0;
-        boolean beforeI = false;
+        boolean beforeI = false;                        // check letter if before
         boolean beforeLC = false;
         boolean beforeDM = false;
         for (int i = 0; i < s.length(); i++){
-            switch (s.charAt(i)){
+            switch (s.charAt(i)){                       // checking all of the letters 'V', 'L', 'D', 'M', 'I', 'X', 'C'
                 case 'V':
                     if(beforeI){
                         sum = sum + 3;
@@ -48,7 +48,6 @@ public class BruteForce {
                         beforeDM = false;
                     }else{
                         sum += 1000;
-                        beforeDM = true;
                     }
                     break;
                 case 'I':
