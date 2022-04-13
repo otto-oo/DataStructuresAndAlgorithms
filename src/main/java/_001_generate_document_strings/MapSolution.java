@@ -1,9 +1,9 @@
-package main.java.algo1_generate_document_strings;
+package main.java._001_generate_document_strings;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Algo1_1 {
+public class MapSolution {
 
     public static void main(String[] args) {
         String character = "!veDJaCyd vaeo perelo xw";
