@@ -1,4 +1,4 @@
-package main.java._002_group_anagrams_strings;
+package main.java._algo2_group_anagrams_strings;
 
 import java.util.*;
 
