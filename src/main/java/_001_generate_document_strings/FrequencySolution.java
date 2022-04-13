@@ -9,6 +9,7 @@ public class FrequencySolution {
         System.out.println("generateDocumentStrings(character, document) = " + generateDocumentStrings(character, document));
     }
 
+    // time complexity O(n^2), space complexity O(n)
     public static boolean generateDocumentStrings(String character, String document){
 
         for (int i = 0; i < document.length(); i++){        // base string is document, logic depends on document string

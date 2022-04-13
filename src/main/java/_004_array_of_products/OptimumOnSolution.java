@@ -9,6 +9,7 @@ public class OptimumOnSolution {
         System.out.println("Arrays.toString(arrayOfProducts(array)) = " + Arrays.toString(arrayOfProducts(array)));
     }
 
+    // time complexity O(n), space complexity O(n)
     public static int[] arrayOfProducts(int[] array) {
         int[] products = new int[array.length];
 

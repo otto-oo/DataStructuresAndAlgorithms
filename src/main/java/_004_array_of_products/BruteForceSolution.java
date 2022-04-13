@@ -9,8 +9,8 @@ public class BruteForceSolution {
         System.out.println("Arrays.toString(arrayOfProducts(array)) = " + Arrays.toString(arrayOfProducts(array)));
     }
 
+    // time complexity O(n^2), space complexity O(n)
     public static int[] arrayOfProducts(int[] array){
-
         int[] resultArray= new int[array.length];
 
         for(int i = 0; i < array.length; i++){

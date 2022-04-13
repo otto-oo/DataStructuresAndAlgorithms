@@ -15,6 +15,7 @@ public class MapSolution {
         System.out.println("generateDocumentStrings(character, document) = " + generateDocs(character, document));
     }
 
+    // time complexity O(n), space complexity O(n)
     public static boolean generateDocs(String chars, String doc){
         if (doc.equals("")) return true;
         if (chars.length()<doc.length()) return false;
@@ -27,7 +28,7 @@ public class MapSolution {
 
         for (Character ch : doc.toCharArray()){                         // searching ch for document in the map.
             if (!map.containsKey(ch) || map.get(ch) == 0){
-                return false; // map does not contain ch of doc OR value of ch is 0
+                return false;                                           // map does not contain ch of doc OR value of ch is 0
             }
             map.put(ch, map.get(ch) - 1);                               // if not update the value of ch
         }

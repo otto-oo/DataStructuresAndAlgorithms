@@ -11,8 +11,8 @@ public class OptimumSolution {
 
     }
 
+    // time complexity ??????, space complexity ????
     public static List<List<String>> groupAnagramStrings(String[] words){
-
         Map<String, List<String>> wordMap = new HashMap<>();
         for (int i = 0; i < words.length; i++){
             char[] charArray = words[i].toCharArray();              // converting to char array

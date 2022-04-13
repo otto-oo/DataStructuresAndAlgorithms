@@ -7,16 +7,16 @@ public class StringSolution {
         System.out.println(canGenerate( "!veDJaCyd vaeo perelo xw",  "Cydeo Java Developer!"));
     }
 
-    public static boolean canGenerate(String avialableStr, String generatedStr) {
+    // time complexity O(n), space complexity O(n)
+    public static boolean canGenerate(String availableStr, String generatedStr) {
         String [] generateArr= generatedStr.split("");                              // All characters to the String Array
-        String avialableStrUpdated="";
+        String availableStrUpdated="";
         for (int i=0; i<=generatedStr.length()-1; i++){
-            avialableStrUpdated=avialableStr.replaceFirst(generateArr[i],"");  // Replace char with ""
-
-            if(avialableStrUpdated.length()==avialableStr.length()){                      // if lengths are same return false
+            availableStrUpdated=availableStr.replaceFirst(generateArr[i],"");  // Replace char with ""
+            if(availableStrUpdated.length()==availableStr.length()){                      // if lengths are same return false
                 return false;
             }
-            avialableStr=avialableStrUpdated;
+            availableStr=availableStrUpdated;
         }
         return true;
     }
