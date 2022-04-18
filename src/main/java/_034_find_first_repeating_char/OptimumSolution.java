@@ -1,4 +1,4 @@
-package main.java._algo34_find_first_repeating_char;
+package main.java._034_find_first_repeating_char;
 
 import java.util.HashSet;
 import java.util.Set;

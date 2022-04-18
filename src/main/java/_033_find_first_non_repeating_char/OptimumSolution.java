@@ -1,4 +1,4 @@
-package main.java._algo33_find_first_non_repeating_char;
+package main.java._033_find_first_non_repeating_char;
 
 import java.util.HashMap;
 import java.util.Map;
