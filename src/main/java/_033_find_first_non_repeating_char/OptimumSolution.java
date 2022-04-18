@@ -10,7 +10,7 @@ public class OptimumSolution {
     }
 
     // time complexity O(n), space complexity O(n)
-    public static char findFirstNonRepeatingChar(String str){
+    public static char findFirstNonRepeatingChar(String str){ // like to LeetCode 387 First Unique Character in a String
         // create hashmap for char and its count
         Map<Character,Integer> map = new HashMap<>();
         int count = 0;
