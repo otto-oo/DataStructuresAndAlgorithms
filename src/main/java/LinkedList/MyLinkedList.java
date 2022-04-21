@@ -13,7 +13,6 @@ public class MyLinkedList {
             }
         }
 
-
         public Node first;
         public Node last;
         public int size;
