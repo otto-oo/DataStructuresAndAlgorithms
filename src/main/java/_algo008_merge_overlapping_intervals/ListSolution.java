@@ -1,11 +1,11 @@
-package main.java.algo8_merge_overlapping_intervals;
+package main.java._algo008_merge_overlapping_intervals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class Algo8 {
+public class ListSolution {
 
     public static void main(String[] args) {
 
@@ -15,11 +15,11 @@ public class Algo8 {
 
     public static List<List<Integer>> mergeOverlappingIntervals(int[][] array){
 
-        Arrays.sort(array, Comparator.comparingInt(o -> o[0]));   // nlogn
+        Arrays.sort(array, Comparator.comparingInt(o -> o[0]));         // nlogn, needs to be sorted before going on..
 
         List<List<Integer>> list = new ArrayList<>();
 
-        for(int i=0; i < array.length; i++){    //n
+        for(int i=0; i < array.length; i++){                            // O(n)
             if( i != array.length-1 && array[i][1]>=array[i+1][0] ){
                 array[i+1][0] = array[i][0];
                 array[i+1][1] = Math.max(array[i][1],array[i+1][1]);

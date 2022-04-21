@@ -1,4 +1,4 @@
-package main.java._035_find_middle_of_the_linked_list;
+package main.java._algo35_find_middle_of_the_linked_list;
 
 public class Optimum {
 
