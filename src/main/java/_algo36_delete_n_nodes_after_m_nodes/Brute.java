@@ -9,7 +9,7 @@ public class Brute{
         for (int i = keys.length - 1; i >= 0; i--) {
             head = new Node(keys[i], head);
         }
-        head = deleteNNodesAfterMNodes(head, 2, 1);
+        head = deleteNNodesAfterMNodes(head, 1, 1);
         printList(head);
     }
 
