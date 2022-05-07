@@ -2,19 +2,19 @@ package main.java.LinkedList;
 
 public class Node {
 
-        public int val;
+        public int value;
         public Node next;
 
         public Node() {
         }
 
-        public Node(int _val) {
-            val = _val;
+        public Node(int value) {
+            this.value = value;
         }
 
-        public Node(int _val, Node _next) {
-            val = _val;
-            next = _next;
+        public Node(int value, Node next) {
+            this.value = value;
+            this.next = next;
         }
 }
 

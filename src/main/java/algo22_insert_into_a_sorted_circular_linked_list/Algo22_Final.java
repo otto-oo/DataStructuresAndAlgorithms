@@ -32,15 +32,15 @@ public class Algo22_Final {
             Node currentNode = head;
             Node insertionNode = new Node(insertVal);
             do{
-                if (insertVal > currentNode.val && insertVal < currentNode.next.val){
+                if (insertVal > currentNode.value && insertVal < currentNode.next.value){
                     insertionNode.next = currentNode.next;
                     currentNode.next = insertionNode;
                     break;
-                }else if(insertVal < currentNode.val && insertVal < currentNode.next.val && currentNode.val > currentNode.next.val){
+                }else if(insertVal < currentNode.value && insertVal < currentNode.next.value && currentNode.value > currentNode.next.value){
                     insertionNode.next = currentNode.next;
                     currentNode.next = insertionNode;
                     break;
-                }else if (insertVal > currentNode.val && insertVal > currentNode.next.val && currentNode.val > currentNode.next.val){
+                }else if (insertVal > currentNode.value && insertVal > currentNode.next.value && currentNode.value > currentNode.next.value){
                     insertionNode.next = currentNode.next;
                     currentNode.next = insertionNode;
                 }
@@ -57,9 +57,9 @@ public class Algo22_Final {
             return;
         }
         while (current.next != head) {
-            System.out.print(current.val + ", ");
+            System.out.print(current.value + ", ");
             current = current.next;
         }
-        System.out.println(current.val);
+        System.out.println(current.value);
     }
 }
