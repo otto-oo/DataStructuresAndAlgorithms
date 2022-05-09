@@ -1,4 +1,4 @@
-package main.java.alumni_linkedlist_impl;
+package main.java._algo37_alumni_linkedlist_impl;
 
 public class AnimalFeast {
 
@@ -23,11 +23,6 @@ public class AnimalFeast {
     }
 
     public static boolean isAnimalDishEquals(String animalName, String dishName){
-/*        String animalFistChar = animalName.substring(0, 1);
-        String animalLastChar = animalName.substring(animalName.length() - 1);
-        String dishFistChar = dishName.substring(0, 1);
-        String dishLastChar = dishName.substring(dishName.length() - 1);
-        return animalFistChar.equals(dishFistChar) && animalLastChar.equals(dishLastChar);*/
 
         return animalName.substring(0, 1).equals(dishName.substring(0, 1)) && animalName.substring(animalName.length() - 1).equals(dishName.substring(dishName.length() - 1));
     }

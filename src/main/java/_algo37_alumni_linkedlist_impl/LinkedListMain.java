@@ -1,4 +1,4 @@
-package main.java.alumni_linkedlist_impl;
+package main.java._algo37_alumni_linkedlist_impl;
 
 public class LinkedListMain {
     public static void main(String[] args) {
