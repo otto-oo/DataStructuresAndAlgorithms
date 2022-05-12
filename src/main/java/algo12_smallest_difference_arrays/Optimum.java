@@ -23,7 +23,7 @@ public class Optimum {
         Arrays.sort(arrayOne); // {-1, 3, 5, 10, 20, 28, 29}                    // array should be sorted
         Arrays.sort(arrayTwo); // {15, 17, 26, 134, 135, 150}                   // array should be sorted
 
-        while (pointOne < arrayOne.length && pointTwo < arrayTwo.length) {
+        while (pointOne < arrayOne.length && pointTwo < arrayTwo.length && min != 0) {  // 0 is the best solution
 
             if (Math.abs(arrayOne[pointOne] - arrayTwo[pointTwo]) < min) {      // check if subtraction is less than min
                 min = Math.abs(arrayOne[pointOne] - arrayTwo[pointTwo]);

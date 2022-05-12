@@ -6,6 +6,7 @@ public class Employee {
     int id;
     Employee leftChild;
     Employee rightChild;
+    Employee head;
 
     public Employee(String name, String email, int id) {
         this.name = name;

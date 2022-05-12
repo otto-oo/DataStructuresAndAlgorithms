@@ -14,13 +14,13 @@ public class BruteForce {
         System.out.println("Arrays.toString(pairs) = " + Arrays.toString(pairs));
     }
 
+    // Time Complexity is O(n), Space complexity is O(1)
     public static int[] findSmallestDifference(int[] arrayOne, int[] arrayTwo){
 
         int min = Integer.MAX_VALUE;                                // begin with maximum integer value
         int subtraction;
         int[] smallestpair = new int[2];
 
-        // Time Complexity is O(n), Space complexity is O(1)
         for (int i = 0; i < arrayOne.length; i++){
             for (int j = 0; j < arrayTwo.length; j++){
                 subtraction = Math.abs(arrayOne[i] - arrayTwo[j]);
