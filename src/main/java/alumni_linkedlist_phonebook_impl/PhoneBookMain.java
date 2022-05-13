@@ -15,12 +15,14 @@ public class PhoneBookMain {
         //System.out.println("phoneBookLinkedList.findByName(\"qwerty\") = " + phoneBookLinkedList.findByName("qwerty"));
         //System.out.println("phoneBookLinkedList.findAllByLastName(\"cydeo\") = " + phoneBookLinkedList.findAllByLastName("cydeo"));
         //System.out.println("phoneBookLinkedList.findAll() = " + phoneBookLinkedList.findAll());
-        phoneBookLinkedList.deleteByName("cydeo");
-        phoneBookLinkedList.printPhoneBook();
+        //phoneBookLinkedList.deleteByName("cydeo");
+        //phoneBookLinkedList.printPhoneBook();
         //System.out.println("phoneBookLinkedList.size = " + phoneBookLinkedList.size);
         //phoneBookLinkedList.deleteAllMatchingLastName("cydeo");
-        phoneBookLinkedList.printPhoneBook();
-        System.out.println("phoneBookLinkedList.size = " + phoneBookLinkedList.size);
+        //phoneBookLinkedList.printPhoneBook();
+        //phoneBookLinkedList.deleteAllMatchingLastNameLong("cydeo");
+        //phoneBookLinkedList.printPhoneBook();
+        //System.out.println("phoneBookLinkedList.size = " + phoneBookLinkedList.size);
 
     }
 }
