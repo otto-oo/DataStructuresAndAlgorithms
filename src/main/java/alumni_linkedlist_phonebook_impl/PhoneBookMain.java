@@ -24,5 +24,17 @@ public class PhoneBookMain {
         //phoneBookLinkedList.printPhoneBook();
         //System.out.println("phoneBookLinkedList.size = " + phoneBookLinkedList.size);
 
+/*        StringBuilder stringBuilder = new StringBuilder("hello");
+        stringBuilder.append('d');
+        System.out.println("stringBuilder = " + stringBuilder);
+
+        StringBuffer stringBuffer = new StringBuffer("world");
+        stringBuffer.append('a');
+        System.out.println("stringBuffer = " + stringBuffer);
+
+        String str = "cydeo";
+        str = "algorithm";
+        System.out.println("str = " + str);*/
+
     }
 }
