@@ -9,15 +9,18 @@ public class PhoneBookMain {
         phoneBookLinkedList.insert("cydeo", "cydeo", "c@yahoo.com", 1234);
         phoneBookLinkedList.insert("new cydeo", "cydeo", "d@yahoo.com", 5647);
         phoneBookLinkedList.printPhoneBook();
-        //System.out.println("phoneBookLinkedList.findByName(\"otto\") = " + phoneBookLinkedList.findByName("otto").toString());
+        System.out.println("phoneBookLinkedList.size = " + phoneBookLinkedList.size);
+        System.out.println("phoneBookLinkedList.findByName(\"otto\") = " + phoneBookLinkedList.findByName("otto"));
         //System.out.println("phoneBookLinkedList.findByName(\"cydeo\") = " + phoneBookLinkedList.findByName("cydeo"));
         //System.out.println("phoneBookLinkedList.findByName(\"qwerty\") = " + phoneBookLinkedList.findByName("qwerty"));
         //System.out.println("phoneBookLinkedList.findAllByLastName(\"cydeo\") = " + phoneBookLinkedList.findAllByLastName("cydeo"));
         //System.out.println("phoneBookLinkedList.findAll() = " + phoneBookLinkedList.findAll());
-        //phoneBookLinkedList.deleteByName("cydeo");
-        //phoneBookLinkedList.printPhoneBook();
+        phoneBookLinkedList.deleteByName("cydeo");
+        phoneBookLinkedList.printPhoneBook();
+        //System.out.println("phoneBookLinkedList.size = " + phoneBookLinkedList.size);
         //phoneBookLinkedList.deleteAllMatchingLastName("cydeo");
-        //phoneBookLinkedList.printPhoneBook();
+        phoneBookLinkedList.printPhoneBook();
+        System.out.println("phoneBookLinkedList.size = " + phoneBookLinkedList.size);
 
     }
 }

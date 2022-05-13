@@ -9,6 +9,7 @@ public class PhoneBookLinkedList {
 
     PhoneBook head;
     PhoneBook tail;
+    int size;
 
     public void insert(String name, String lastName, String email, int phoneNumber){
         PhoneBook newPhoneBook = new PhoneBook(name, lastName, email, phoneNumber);
@@ -18,6 +19,7 @@ public class PhoneBookLinkedList {
             tail.next = newPhoneBook;
             tail = newPhoneBook;
         }
+        size++;
     }
 
     public PhoneBook findByName(String name){
@@ -55,14 +57,15 @@ public class PhoneBookLinkedList {
                     if(currentPhoneBook == tail){            // if current is also tail that means, root has 1 node
                         tail = null;
                     }
-                }
-                else if(currentPhoneBook == tail){           // if current is tail, lastNode will be deleted
+                }else if(currentPhoneBook == tail){           // if current is tail, lastNode will be deleted
                     tail = previous;
                     previous.next = null;
                 }else{                              // if deletedNode is middle of linked list
                     previous.next = currentPhoneBook.next;
                     currentPhoneBook.next = null;
                 }
+                size--;
+                break;
             }
             previous = currentPhoneBook;
             currentPhoneBook = currentPhoneBook.next;
@@ -73,6 +76,44 @@ public class PhoneBookLinkedList {
         List<PhoneBook> deletePhoneBookList = findAllByLastName(lastName);
         for (PhoneBook phoneBook : deletePhoneBookList){
             deleteByName(phoneBook.name);
+        }
+    }
+
+    public void deleteAllMatchingLastNameLong(String lastName){
+        PhoneBook current = head;
+        PhoneBook previous = head;
+
+        if (head == null)
+            throw new RuntimeException("Phone Book is empty.");
+
+        boolean isDeleted = false;
+        while (current != null){
+            if (current.lastName.equals(lastName)){
+                if (current == head){
+                    if (size == 1){
+                        head = tail = null;
+                    }else {
+                        head = current.next;
+                        previous = head;
+                        current.next = null;
+                    }
+                }else if(current == tail){
+                    tail = previous;
+                    previous.next = null;
+                }else {
+                    previous.next = current.next;
+                    current.next = null;
+                }
+                size--;
+                isDeleted = true;
+            }
+            if (isDeleted){
+                current = previous.next;
+                isDeleted = false;
+            }else {
+                previous = current;
+                current = current.next;
+            }
         }
     }
 
@@ -95,9 +136,20 @@ public class PhoneBookLinkedList {
             System.out.print("{currentPhoneBook.name = " + currentPhoneBook.name + ", "
                     + "currentPhoneBook.lastName = " + currentPhoneBook.lastName + ", "
                     + "currentPhoneBook.email = " + currentPhoneBook.email + ", "
-                    + "currentPhoneBook.phoneNumber = " + currentPhoneBook.phoneNumber + "}" + "-> ");
+                    + "currentPhoneBook.phoneNumber = " + currentPhoneBook.phoneNumber + "}" + "=> ");
             currentPhoneBook = currentPhoneBook.next;
         }
         System.out.println();
+    }
+
+    public PhoneBook findByNameO1(String name){
+        PhoneBook currentPhoneBook = head;
+        while (currentPhoneBook != null){
+            if(currentPhoneBook.name == name){
+                return currentPhoneBook;
+            }
+            currentPhoneBook = currentPhoneBook.next;
+        }
+        return null;
     }
 }

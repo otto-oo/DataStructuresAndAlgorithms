@@ -8,11 +8,11 @@ public class TreeMap {
     public static void main(String[] args) {
         int[] arrayOne = {-1, 5, 10, 20, 28, 3};
         int[] arrayTwo = {26, 134, 135, 15, 17};
-        int[] pairs = smallestDifferenceWithMap(arrayOne, arrayTwo);
+        //int[] pairs = smallestDifferenceWithMap(arrayOne, arrayTwo);
         //System.out.println("Arrays.toString(pairs) = " + Arrays.toString(pairs));
     }
 
-    public static int[] smallestDifferenceWithMap(int[] array1, int[] array2){
+    /*public static int[] smallestDifferenceWithMap(int[] array1, int[] array2){
         int[] output = new int[2];
 
         Map<Integer, Integer> allNumbersMap = new TreeMap<>();
@@ -43,5 +43,5 @@ public class TreeMap {
             }
         }
         return output;
-    }
+    }*/
 }

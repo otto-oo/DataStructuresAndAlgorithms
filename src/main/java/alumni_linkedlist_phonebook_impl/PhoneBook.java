@@ -16,4 +16,13 @@ public class PhoneBook {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
+
+    @Override
+    public String toString() {
+        return "PhoneBook{" +
+                "name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", phoneNumber=" + phoneNumber +
+                '}';
+    }
 }
