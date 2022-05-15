@@ -1,7 +1,5 @@
 package main.java.alumni_linkedlist_phonebook_impl;
 
-import java.util.Collections;
-
 public class PhoneBookMain {
     public static void main(String[] args) {
         PhoneBookLinkedList phoneBookLinkedList = new PhoneBookLinkedList();
