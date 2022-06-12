@@ -10,6 +10,7 @@ public class CountBracketSequence {
         System.out.println("countBracketSequence(\")\") = " + countBracketSequence(")"));
         System.out.println("countBracketSequence(\"(()\") = " + countBracketSequence("(()"));
         System.out.println("countBracketSequence(\"()(\") = " + countBracketSequence("()("));
+        System.out.println("countBracketSequence(\")()()(\") = " + countBracketSequence(")()()("));
     }
     public static int countBracketSequence(String s){
         int index = 0, sum = 0;
