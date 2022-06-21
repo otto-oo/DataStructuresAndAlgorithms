@@ -23,4 +23,32 @@ public class TwoJoggers {
         }
         return result;
     }
+
+    // JavaScript Solution
+    /*var nbrOfLaps = function (x, y) {
+        var result = Array(2).fill(0);
+        var i = 1;
+        var j = 1;
+        while (i <= y)
+        {
+            if (i * x < j * y)
+            {
+                // whichever less i++
+                i++;
+            }
+            else if (i * x > j * y)
+            {
+                // whichever less j++
+                j++;
+            }
+            else
+            {
+                // else
+                result[0] = i;
+                result[1] = j;
+                break;
+            }
+        }
+        return result;
+    }*/
 }
