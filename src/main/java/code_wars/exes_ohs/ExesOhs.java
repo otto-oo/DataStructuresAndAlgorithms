@@ -1,4 +1,4 @@
-package main.java.hacker_ranks.exes_ohs;
+package main.java.code_wars.exes_ohs;
 
 public class ExesOhs {
 

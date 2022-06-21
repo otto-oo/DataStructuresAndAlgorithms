@@ -1,4 +1,4 @@
-package main.java.hacker_ranks.number_of_duplicated_letters;
+package main.java.code_wars.number_of_duplicated_letters;
 
 import java.util.HashMap;
 import java.util.Map;

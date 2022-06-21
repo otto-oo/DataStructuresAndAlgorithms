@@ -1,4 +1,4 @@
-package main.java.hacker_ranks.two_joggers;
+package main.java.code_wars.two_joggers;
 
 import java.util.Arrays;
 

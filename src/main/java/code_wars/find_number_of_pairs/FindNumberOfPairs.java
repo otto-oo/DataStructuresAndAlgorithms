@@ -1,4 +1,4 @@
-package main.java.hacker_ranks.find_number_of_pairs;
+package main.java.code_wars.find_number_of_pairs;
 
 import java.util.HashMap;
 import java.util.Map;

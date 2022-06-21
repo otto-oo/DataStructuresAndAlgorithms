@@ -1,4 +1,4 @@
-package main.java.hacker_ranks.who_likes_it;
+package main.java.code_wars.who_likes_it;
 
 public class WhoLikesIt {
     public static void main(String[] args) {
