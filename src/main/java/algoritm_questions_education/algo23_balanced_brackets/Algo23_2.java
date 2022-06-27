@@ -6,8 +6,8 @@ public class Algo23_2 {
 
     public static void main(String[] args) {
 
-        String str = "([])() 5, ;{cy}(de(o))()()";
-        //String str = "";
+        //String str = "(}[])() 5, ;{cy}(de(o))()()";
+        String str = "(})";
         //String str = "(c)";
         //String str = "(([c]))";
 
@@ -31,21 +31,24 @@ public class Algo23_2 {
                     case ')':
                         if (stack.isEmpty()){
                             return false;
-                        }else if (stack.pop()=='('){
+                        }else if (stack.peek()=='('){
+                            stack.pop();
                             break;
-                        }
+                        }else stack.push(str.charAt(i));
                     case ']':
                         if (stack.isEmpty()){
                             return false;
-                        }else if (stack.pop()=='['){
+                        }else if (stack.peek()=='['){
+                            stack.pop();
                             break;
-                        }
+                        }else stack.push(str.charAt(i));
                     case '}':
                         if (stack.isEmpty()){
                             return false;
-                        }else if (stack.pop()=='}'){
+                        }else if (stack.peek()=='{'){
+                            stack.pop();
                             break;
-                        }
+                        }else stack.push(str.charAt(i));
                     default:            // check for other characters
                         i++;
                         continue;
