@@ -15,10 +15,9 @@ Return String of day..
 
  */
 
-
 public class Days {
     public static void main(String[] args) {
-        System.out.println("days(\"Wed\", 2) = " + days("Wed", 2));
+        System.out.println("days(\"Wed\", 10) = " + days("Wed", 10));
     }
 
     public static String days(String day, int k){
