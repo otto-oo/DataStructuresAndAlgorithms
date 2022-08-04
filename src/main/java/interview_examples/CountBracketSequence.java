@@ -1,4 +1,4 @@
-package main.java.interview_examples.oracle;
+package main.java.interview_examples;
 
 import java.util.Stack;
 
