@@ -1,8 +1,6 @@
 package main.java.interview_examples;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 public class FirstNonRepeatingVowel {
     public static void main(String[] args) {
@@ -34,7 +32,8 @@ public class FirstNonRepeatingVowel {
     }
 
     static int getFirstNonRepeatingVowel(String str) {
-        Map<Character, Integer> map = new LinkedHashMap<>();
+        //Map<Character, Integer> map = new TreeMap<>();        // can be usable also
+        Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
