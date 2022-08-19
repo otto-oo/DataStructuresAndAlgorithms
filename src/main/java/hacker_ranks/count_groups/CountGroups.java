@@ -26,7 +26,7 @@ public class CountGroups {
 
         boolean[] isReached = new boolean[isConnected.length];                              // isReached = {false, false, false}
         for (int i = 0; i < isConnected.length; i++) {
-            if (!isReached[i]) {                                                            // isReached[0] = false, !isReached[0] = true
+            if (!isReached[i]) {                                                            // !isReached[0] = true   // if it is not reached then go to the method
                 alignedGroups(isConnected, isReached, i);                                   // i = 0
                 count++;
             }
@@ -35,11 +35,19 @@ public class CountGroups {
     }
 
     private static void alignedGroups(int[][] isConnected, boolean[] isReached, int v) {
-        isReached[v] = true;                                                                // isReached[0] = true -> isReached = {true, false, false}
+        isReached[v] = true;                                                                // isReached[0] = true -> isReached = {true, false, false} / do not want to check [0,0] or [1,1]
                                                                                             // v = 0
         for (int i = 0; i < isConnected.length; i++) {                                      // i = 0
-            if (isConnected[v][i] == 1 && !isReached[i])                                    // isConnected[0][0] == 1 && !isReached[0] = false
-                alignedGroups(isConnected, isReached, i);                                   // isConnected[0][1] == 1 && !isReached[0] = false
+            // if it is 1 and is not reached then go to recursive method
+            if (isConnected[v][i] == 1 && !isReached[i])                                    // isConnected[0][0] == 1 && !isReached[0] = false  / [0,0] -> pass to the next row
+                alignedGroups(isConnected, isReached, i);                                   // isConnected[0][1] == 1 && !isReached[1] -> true / recursive / i = 1 -> v = 0 / isReached = {true, false, false}
+                                                                                                // recursive -> isConnected[1][0] == 1 && !isReached[0] -> false
+                                                                                                // recursive -> isConnected[1][1] == 1 && !isReached[0] -> false
+                                                                                                // recursive -> isConnected[1][2] == 0 && !isReached[0] -> false
+                                                                                            // isConnected[0][2] == 0 && !isReached[0] -> false
+                                                                                            // isConnected[2][0] == 0 && !isReached[0] -> false
+                                                                                            // isConnected[2][1] == 0 && !isReached[0] -> false
+                                                                                            // isConnected[2][2] == 0 && !isReached[0] -> false
         }
     }
 }
