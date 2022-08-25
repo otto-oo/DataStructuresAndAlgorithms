@@ -6,8 +6,8 @@ import java.util.Optional;
 
 public class MaxLengthValidSubArray {
     public static void main(String[] args) {
-        List<Integer> processingPower = Arrays.asList(2,1,3,4,5);
         List<Integer> bootingPower = Arrays.asList(3,6,1,3,4);
+        List<Integer> processingPower = Arrays.asList(2,1,3,4,5);
         int powerMax = 25;
 
         System.out.println("maxLengthValidSubArray(processingPower, bootingPower, powerMax) = " + maxLengthValidSubArray(processingPower, bootingPower, powerMax));
