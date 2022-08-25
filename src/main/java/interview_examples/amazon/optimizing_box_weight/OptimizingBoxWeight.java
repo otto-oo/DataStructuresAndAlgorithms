@@ -1,4 +1,4 @@
-package main.java.hacker_ranks.optimizing_box_weight;
+package main.java.interview_examples.amazon.optimizing_box_weight;
 
 import java.util.ArrayList;
 import java.util.Arrays;

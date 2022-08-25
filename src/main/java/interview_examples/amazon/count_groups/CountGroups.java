@@ -1,4 +1,4 @@
-package main.java.hacker_ranks.count_groups;
+package main.java.interview_examples.amazon.count_groups;
 
 import java.util.Arrays;
 import java.util.List;

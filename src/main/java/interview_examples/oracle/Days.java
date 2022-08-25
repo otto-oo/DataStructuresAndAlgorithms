@@ -1,4 +1,4 @@
-package main.java.interview_examples;
+package main.java.interview_examples.oracle;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package main.java.interview_examples;
+package main.java.interview_examples.oracle.reading_file;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
