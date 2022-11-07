@@ -21,6 +21,7 @@ public class BruteForce {
         int subtraction;
         int[] smallestpair = new int[2];
 
+
         for (int i = 0; i < arrayOne.length; i++){
             for (int j = 0; j < arrayTwo.length; j++){
                 subtraction = Math.abs(arrayOne[i] - arrayTwo[j]);
